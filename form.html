@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <fieldset><legend>Personal Details</legend>
+    <form action="/action_page.php">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="mname">Middle Name:</label>
+        <input type="text" id="mname" name="mname"><br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+      </form>
+
+      <form action="/action_page.php">
+        <label for="course">Course:</label>
+        <select name="course" id="course">
+          <option value="course">Select</option>
+          <option value="bca">BCA</option>
+          <option value="bba">BBA</option>
+          <option value="btech">B.Tech</option>
+          <option value="mtech">M.Tech</option>
+          <option value="mba">MBA</option>
+          <option value="mca">MCA</option>
+        </select>
+        </form>
+
+        <form action="/action_page.php">
+            <p>Gender:</p>
+            <input type="radio" id="male" name="male" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="female" value="Female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="other" value="other">
+            <label for="other">Other</label>
+          </form>
+          
+          <br>
+          
+          <form action="/action_page.php">
+            <label for="birthdaytime">DOB:</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+          </form>
+
+          <br>
+          
+          <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" value="+91" style="width: 30px;" readonly/>
+        <input type="tel" id="phone" name="phone" >
+        <br />
+
+        <form action="/action_page.php">
+            <p><label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="5" cols="90"></textarea></p>
+          </form>
+
+          <br>
+
+          <form action="/action_page.php">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br><br><br>
+            <label for="pass">Password:</label>
+            <input type="text" id="pass" name="pass"><br><br><br>
+            <label for="password">Re-type Password:</label>
+            <input type="text" id="password" name="password"><br><br>
+          </form>
+
+          <form action="/action_page.php">
+            <input type="checkbox" id="terms" name="terms" value="terms">
+            <label for="terms">Agree to terms and conditions</label>
+          </form>
+
+          <br>
+          <form action="/action_page.php">
+            <label for="myfile">Choose File:</label>
+            <input type="file" id="myfile" name="myfile">
+          </form>
+
+          <br>
+          <form action="/action_page.php">
+            <label for="favcolor">Choose color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+          </form>
+
+          </fieldset>
+</body>
+</html>
